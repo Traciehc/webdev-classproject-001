@@ -33,7 +33,7 @@ Please refer to `mockup.jpg` in the repository.
 
 Task 001:
 
-- [ ] Find and replace the quote in `index.html`
+- [X] Find and replace the quote in `index.html`
 
 ### Submitting Your Work
 

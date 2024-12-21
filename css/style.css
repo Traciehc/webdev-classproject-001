@@ -11,6 +11,7 @@ body {
 	font-size: 16px;
 	line-height: 1.6;
 	background-color: #f9f9f9;
+	
 }
 
 h1,
@@ -26,16 +27,13 @@ h6 {
 	margin: 0 0 1.6rem;
 }
 
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
-	margin: 0 0 1.6rem;
-}
-
 a {
 	color: #0056b3;
 	border-bottom: 2px solid transparent;
 	transition: all 0.5s ease-in-out;
+	
+	
+
 }
 
 a:hover {
@@ -48,39 +46,118 @@ hr {
 	color: #555555;
 	border-color: #555555;
 }
+article {
+	display: flex;
+	flex-direction: Column;
+	border: 2px solid white;
+	padding: 5rem;
+	margin: auto 0;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-height: 80%;
+	
+}
+blockquote {
+    font-family: Arial, Helvetica, sans-serif;/* or any other font you prefer */
+    font-size: 30px; /* adjust size as needed */
+    color: white; /* adjust color as needed */
+    position: relative;
+    padding: 30px;
+    margin-top: auto 0;
+	line-height: 1.6;
+	
+}
+
+blockquote::before,
+blockquote::after {
+    content: '“'; /* opening quote */
+    font-size: 100px; /* adjust size as needed */
+    color: white; /* adjust color as needed */
+    position: absolute;
+	
+}
+
+blockquote::before {
+    top: -60px;
+    left: -30px;
+	font-weight: bold;
+	
+	
+}
+
+blockquote::after {
+    content: '”'; /* closing quote */
+    bottom: -60px;
+    right: -30px;
+	position: absolute;
+	font-weight: bold;
+}
 
 /* Layout */
 
-.container {
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 600px;
-	border: 1px dotted green;
+.border {
+	border: 5px solid white;
 }
+
 .main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid red;
-	background-color: aquamarine;
+	background: linear-gradient(135deg, #ae37c4, #140a17); /* gradient background */
 	width: 100%;
 	height: 100vh;
+	border: 1px solid white;
+	
 }
 
+.container {
+	padding: 10px;
+	margin-top: 70px;
+	width: 100%;
+	max-width: 600px;
+	
+	
+}
+
+
+
+
+cite {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
 
 /* Media Queries */
 
-@media (min-width: 699px) {
+/*@media (min-width: 699px) {*/
 
 	/* CSS HERE */
+	@media (min-width: 699px) { 
+		body { 
+			font-size: 18px;
+		 } 
+		 blockquote { font-size: 35px; 
+		} 
+		.container { 
+			max-width: 800px; } }
 
-}
 
 /* Desktop Media Query */
-@media (min-width: 999px) {
+/*@media (min-width: 999px) {*/
 
 	/* CSS HERE */
+	@media (min-width: 999px) { 
+		body { font-size: 20px; 
+		}
+		 blockquote { 
+			font-size: 40px; 
+		} 
+		.container { 
+			max-width: 1200px; 
+		} 
+	}
 
-}
